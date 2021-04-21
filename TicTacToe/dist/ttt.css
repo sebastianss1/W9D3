@@ -1,0 +1,55 @@
+h1 {
+    display: flex;
+    font-size: 72px;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+ul {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 330px;
+    height: 330px;
+}
+
+li {
+    width: 100px;
+    height: 100px;
+    display: block; 
+    background-color: gray;
+    border: 5px solid black;
+}
+
+li:hover {
+    background-color: yellow;
+}
+
+.x, 
+.o {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 72px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+
+.x:after {
+    content: "X"
+}
+
+.o:after {
+    content: "O"
+
+}
+
+.winner {
+    background-color: green;
+    color: white;
+}
+
+.loser {
+    color: red
+}
